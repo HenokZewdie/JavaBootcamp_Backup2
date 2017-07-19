@@ -1,0 +1,81 @@
+IPO
+Input: 
+user input
+Integer Values
+UserNumber
+
+Process: 
+Addd 5 to UserNumber
+store to result
+multiply by 2
+store value in result
+subtract 7 from result
+
+output:
+Display result
+prompt for the user number
+
+Algorithm
+1. user Input integer value, store in userNumber
+2. Add 5 to userNumber, store in result
+3. Multoply by 2, store in result
+4. subtract 7 from result
+5. Display result
+
+
+static int speed, initial;
+	
+		String carStatus;
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter car Status:  start or stop");
+
+		carStatus = input.nextLine();
+		if(carStatus.equalsIgnoreCase("start")){
+			start(carStatus);
+		}
+		else if(carStatus.equalsIgnoreCase("stop")){
+			stop(carStatus);
+		}
+		else {System.out.println("Wrong Input");}
+
+		System.out.println("Enter the car current Speed ");
+		speed = input.nextInt();
+		speeding(speed);
+		System.out.println("Enter the Car Initial speed ");
+		initial = input.nextInt();
+		accelerate(speed, initial);
+
+
+		input.close();	
+	
+	public static Strng start(String carStatusArg) {
+		return ("The car has Starting");
+	}
+	public static void accelerate(int last, int initial){
+		if (last > initial){System.out.println("The car is Accelerating");}
+		else if (last < initial) {System.out.println("The car is slowing down");}
+		else{System.out.println("The car is moving at constant speed");}
+	}
+	public static void speeding(int carSpeed){
+		System.out.println("The car is going  " + speed);
+	}
+	public static void stop(String carStatusArg){
+		System.out.println("The car has stopped");
+	}
+
+
+
+
+
+
+public void accelerate(){
+		
+	}
+	public void emissionTest(){
+		
+	}
+	public void stopped(){
+		
+	}
+	public void pass(){
